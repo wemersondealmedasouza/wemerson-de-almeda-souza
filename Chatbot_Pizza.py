@@ -1,3 +1,7 @@
+#feito por#
+#wemerson de almeda souza#
+#maxson almeida dourado#
+
 import unicodedata
 
 def normalize_text(s: str) -> str:
