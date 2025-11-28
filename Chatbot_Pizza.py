@@ -37,7 +37,7 @@ def main():
         "pagamento": None
     }
 
-    print("Bot: 🍕 Olá! Sou da pizzaria super 10. Diga 'quero pedir' para começar.")
+    print("Bot:  Olá! Sou da pizzaria super 10. Diga 'quero pedir' para começar.")
     txt = normalize_text(ask("Você"))
     if "quero" not in txt and "pedir" not in txt:
         print("Bot: Pedido não iniciado. Encerrando.")
@@ -51,13 +51,13 @@ def main():
     pedido["endereco"] = ask("Informe o endereço para entrega")
     pedido["pagamento"] = escolher_opcao("Forma de pagamento:", ["Pix", "Cartão de Crédito", "Cartão de Débito", "Dinheiro"])
     
-    print("\n📦 **RESUMO DO PEDIDO**")
+    print("\n **RESUMO DO PEDIDO**")
     for k, v in pedido.items():
         print(f"- {k.capitalize()}: {v}")
 
     confirmar = normalize_text(ask("Digite 'confirmar' para finalizar ou 'cancelar'"))
     if "confirm" in confirmar:
-        print("\n🎉 Pedido confirmado! Sua pizza chegará em aproximadamente 30 minutos.")
+        print("\n Pedido confirmado! Sua pizza chegará em aproximadamente 30 minutos.")
     else:
         print("\n❌ Pedido cancelado.")
 
