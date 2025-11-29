@@ -57,7 +57,7 @@ def main():
 
     confirmar = normalize_text(ask("Digite 'confirmar' para finalizar ou 'cancelar'"))
     if "confirm" in confirmar:
-        print("\n Pedido confirmado! Sua pizza chegará em aproximadamente 30 minutos.")
+        print("\n Pedido confirmado! Sua pizza chegará em aproximadamente 45 minutos.")
     else:
         print("\n❌ Pedido cancelado.")
 
