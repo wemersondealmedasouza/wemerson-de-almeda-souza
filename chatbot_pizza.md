@@ -35,9 +35,9 @@ stateDiagram-v2
 | INFORMAR_ENDERECO | Informar endereço e telefone | CONFIRMAR |
 | CONFIRMAR | Confirmar pedido | PAGAMENTO |
 | CONFIRMAR | Alterar pedido | ESCOLHER_SABOR |
-| CONFIRMAR | Cancelar pedido | Fim |
+| CONFIRMAR | Cancelar pedido | Fim da operação |
 | PAGAMENTO | Escolher forma de pagamento | FINALIZADO |
-| FINALIZADO | - | Fim |
+| FINALIZADO | - | Fim da operação |
 
 ---
 
